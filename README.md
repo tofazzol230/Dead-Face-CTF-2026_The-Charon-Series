@@ -404,3 +404,13 @@ cat /tmp/rootflag.txt
 4. **Harden Sudoers Directives:** Avoid granting root/user-switching execution on dual-use binaries (`find`, `awk`, `less`) without strict command arguments.
 5. **Restrict Extended Capabilities:** Audit filesystem capabilities (`getcap -r /`) periodically and avoid placing `cap_setuid` on custom non-setuid-hardened code.
 6. **Enforce Absolute Paths in Privileged Binaries:** All SUID and elevated binaries must reference sub-processes with canonical absolute paths (e.g. `/bin/tar` instead of `tar`) and reset the execution environment.
+
+---
+
+## Disclaimer & License
+
+### Disclaimer
+This documentation was created exclusively for educational, defensive, and authorized competitive capture-the-flag (CTF) purposes during the DEADFACE CTF event. All testing and assessments were performed on isolated, intentional challenge environments.
+
+### License
+This write-up is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). You are free to share and adapt this material with appropriate attribution.
